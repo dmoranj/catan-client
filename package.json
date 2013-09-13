@@ -1,0 +1,16 @@
+{
+  "name": "catan-client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "node-uuid": "*",
+    "mongoose" : "*" ,
+    "async": "*",
+    "commander": "*",
+    "redis": "0.8.4",
+    "request": "*"
+  }
+}
