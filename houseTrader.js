@@ -22,7 +22,7 @@ function getDesigns(callback) {
     });
 }
 
-function retrieveResource(resourceId, callback) {
+function retrieveResource(redisConn, resourceId, callback) {
     redisConn.brpop(resourceId, 0, function (error, res) {
         if (error) {
             callback(error);
@@ -33,8 +33,8 @@ function retrieveResource(resourceId, callback) {
     });
 }
 
-function getDesignResources(resources, callback) {
-    async.mapSeries(resources, retrieveResource, callback);
+function getDesignResources(resources, redisConn, callback) {
+    async.mapSeries(resources, async.apply(retrieveResource, redisConn), callback);
 }
 
 function buyHouse(designId, resources, callback) {
@@ -58,12 +58,17 @@ function buyHouse(designId, resources, callback) {
             callback("Unexpected response buying house: " + response.statusCode);
         }
     });
+    /*
+    console.log("Compra: " + JSON.stringify(options, null, 4));
+    callback(null);*/
 }
 
 function trade(design, callback) {
+    var redisConn = redisUtils.getRedisConnection();
+
     async.forever(function (innerCallback) {
         async.waterfall([
-            async.apply(getDesignResources, design.resources),
+            async.apply(getDesignResources, design.resources, redisConn),
             async.apply(buyHouse, design.id)
         ], function (error) {
             if (error) {
@@ -85,8 +90,6 @@ function startBuying(callback) {
         distributeWork
     ], callback);
 }
-
-redisConn = redisUtils.getRedisConnection();
 
 startBuying(function (error) {
     console.log("Bought with error [" + error + "]");

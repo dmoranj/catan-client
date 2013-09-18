@@ -10,17 +10,20 @@
     <file path="/fragment.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379073502468" ignored="false" />
     <file path="/a.dummy" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379001663569" ignored="false" />
     <file path="/config.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379073302142" ignored="false" />
-    <file path="$PROJECT_DIR$/../catan-servers/config.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379078707915" ignored="false" />
-    <file path="/houseTrader.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379078928996" ignored="false" />
+    <file path="$PROJECT_DIR$/../catan-servers/config.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379498786073" ignored="false" />
+    <file path="/houseTrader.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379498622000" ignored="false" />
     <file path="/redisUtils.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1378709849895" ignored="false" />
-    <file path="$PROJECT_DIR$/../catan-servers/routes/index.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1378710581273" ignored="false" />
-    <file path="/index.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1378710581273" ignored="false" />
+    <file path="$PROJECT_DIR$/../catan-servers/routes/index.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379496199520" ignored="false" />
+    <file path="/index.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379496198751" ignored="false" />
     <file path="$PROJECT_DIR$/../Rush/lib/configBase.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1378995415277" ignored="false" />
     <file path="$PROJECT_DIR$/../Rush/lib/logger.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1378993265788" ignored="false" />
-    <file path="$PROJECT_DIR$/../catan-servers/lib/resourceService.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379074631051" ignored="false" />
-    <file path="/resourceService.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379074630180" ignored="false" />
+    <file path="$PROJECT_DIR$/../catan-servers/lib/resourceService.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379498035943" ignored="false" />
+    <file path="/resourceService.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379497465547" ignored="false" />
     <file path="$PROJECT_DIR$/../catan-servers/model/resourceObj.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379001132439" ignored="false" />
     <file path="/resourceObj.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379001130587" ignored="false" />
+    <file path="$PROJECT_DIR$/../catan-servers/README.md" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379079050660" ignored="false" />
+    <file path="$PROJECT_DIR$/../catan-servers/lib/houseService.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379496718082" ignored="false" />
+    <file path="/houseService.js" changelist="e62ff077-5bc7-4742-89d9-be69b2d85568" time="1379496716167" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,25 +55,25 @@
       <file leaf-file-name="redisUtils.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redisUtils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+            <state line="10" column="27" selection-start="304" selection-end="310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="houseTrader.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="houseTrader.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/houseTrader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="33" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.8026756">
+            <state line="66" column="37" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="28" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+            <state line="21" column="49" selection-start="298" selection-end="298" vertical-scroll-proportion="0.3507795">
               <folding />
             </state>
           </provider>
@@ -94,7 +97,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3674" />
+    <option name="x" value="1344" />
     <option name="y" value="1676" />
     <option name="width" value="987" />
     <option name="height" value="1685" />
@@ -129,8 +132,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/houseTrader.js" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/houseTrader.js" />
   </component>
   <component name="RunManager" selected="Node.js.woodChopper.js">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -173,7 +176,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3674" y="1676" width="987" height="1685" extended-state="6" />
+    <frame x="1344" y="1676" width="987" height="1685" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -183,7 +186,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3945134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39386022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -257,6 +260,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="15" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
@@ -334,14 +344,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redis/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="26" selection-start="8882" selection-end="8882" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redisUtils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+        <state line="10" column="27" selection-start="304" selection-end="310" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -353,16 +358,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
+    <entry file="file://$PROJECT_DIR$/houseTrader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+        <state line="66" column="37" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseTrader.js">
+    <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="33" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.8026756">
+        <state line="21" column="49" selection-start="298" selection-end="298" vertical-scroll-proportion="0.3507795">
           <folding />
         </state>
       </provider>

@@ -6,9 +6,9 @@ config.redis = {
 };
 
 config.woodChopper = {
-    period: 5000,
+    period: 8000,
     type: "Piedra",
-    url: "http://localhost:3003"
+    url: "http://localhost:3004"
 }
 
 config.centralServer = {
