@@ -10,6 +10,7 @@
     "mongoose" : "*" ,
     "async": "*",
     "commander": "*",
+    "socket.io-client": "*",
     "redis": "0.8.4",
     "request": "*"
   }
