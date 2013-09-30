@@ -14,7 +14,8 @@ config.woodChopper = {
 config.steelProducer = {
     url: "http://localhost",
     portHttp: "3005",
-    portSocketIO: "3004"
+    portSocketIO: "3004",
+    type: "steel"
 }
 
 config.centralServer = {
