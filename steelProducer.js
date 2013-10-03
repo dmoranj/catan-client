@@ -17,7 +17,7 @@ function houseInvitationHandler (socket, data) {
             console.log("Error: could not connect with the server");
             socket.emit('¡Hola Don Jose!');
         } else if (response.statusCode == 200) {
-            socket.emit("Por su casa yo pasé", {
+            socket.emit("Por su casa yo pase", {
                 confirmation: body.certificate
             });
         } else {
@@ -44,7 +44,7 @@ function granmaDetectionHandler (socket, data) {
                 grandMaName: body.certificate
             });
         } else {
-            callback(null);
+            socket.emit('¡Hola Don Jose!');
             console.log("Error: " + body.message);
         }
     });
@@ -53,7 +53,13 @@ function granmaDetectionHandler (socket, data) {
 function endCommunication (socket, data) {
     socket.emit("¡Adios Don Jose!");
 
-    redisConn.lpush(config.steelProducer.type, data);
+    if (data.resource) {
+        console.log("Added resource: " + data.resource);
+        redisConn.lpush(config.steelProducer.type, data.resource);
+    } else {
+        console.log("Steel depleted");
+    }
+
     socket.emit('¡Hola Don Jose!');
 }
 

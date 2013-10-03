@@ -6,16 +6,16 @@ config.redis = {
 };
 
 config.woodChopper = {
-    period: 8000,
-    type: "Piedra",
-    url: "http://localhost:3004"
+    period: 5000,
+    type: "Madera",
+    url: "http://localhost:3003"
 }
 
 config.steelProducer = {
     url: "http://localhost",
     portHttp: "3005",
     portSocketIO: "3004",
-    type: "steel"
+    type: "Metal"
 }
 
 config.centralServer = {
