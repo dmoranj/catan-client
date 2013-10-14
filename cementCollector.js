@@ -7,13 +7,15 @@ var amqp = require('amqp'),
 
 var connection = amqp.createConnection({ host: config.cementServer.host });
 
+redisConn = redisUtils.getRedisConnection();
+
 connection.on('ready', function () {
     connection.queue('cemento', function(q){
         q.bind('#');
 
-        // Receive messages
         q.subscribe(function (message) {
-            redisConn.lpush(config.steelProducer.type, message.id);
+            console.log("Cement collected: " + message.id);
+            redisConn.lpush(config.cementServer.type, message.id);
         });
     });
 });
