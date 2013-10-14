@@ -6,12 +6,14 @@
     "start": "node app"
   },
   "dependencies": {
+    "express": "3.0.0rc3",
     "node-uuid": "*",
     "mongoose" : "*" ,
     "async": "*",
     "commander": "*",
     "socket.io-client": "*",
     "redis": "0.8.4",
-    "request": "*"
+    "request": "*",
+    "amqp" : ""
   }
 }

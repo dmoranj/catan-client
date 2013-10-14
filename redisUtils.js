@@ -1,6 +1,5 @@
 var redis = require("redis"),
-    config = require("./config"),
-    redisUtils = require("./redisUtils");
+    config = require("./config");
 
 function getRedisConnection() {
     cli = redis.createClient(config.redis.port, config.redis.host);

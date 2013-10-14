@@ -18,7 +18,7 @@ function houseInvitationHandler (socket, data) {
             socket.emit('¡Hola Don Jose!');
         } else if (response.statusCode == 200) {
             socket.emit("Por su casa yo pase", {
-                confirmation: body.certificate
+                certificate: body.certificate
             });
         } else {
             console.log("Error: " + response.statusCode);
@@ -32,7 +32,7 @@ function granmaDetectionHandler (socket, data) {
         url: config.steelProducer.url + ":" + config.steelProducer.portHttp + "/abuela",
         method: "POST",
         json: {
-            granMaName: data.grandMaName
+            grandMaName: data.grandMaName
         }
     };
 
@@ -41,7 +41,7 @@ function granmaDetectionHandler (socket, data) {
             console.log("Error: could not connect with the server");
         } else if (response.statusCode == 200) {
             socket.emit("A su abuela yo la vi", {
-                grandMaName: body.certificate
+                certificate: body.certificate
             });
         } else {
             socket.emit('¡Hola Don Jose!');
@@ -79,7 +79,7 @@ function executeProtocol() {
         socket.emit('¡Hola Don Jose!');
     });
 
-    socket.on('¿Pasó usted por mi casa?', houseInvitationHandler.bind(this, socket));
+    socket.on('¿Paso usted por mi casa?', houseInvitationHandler.bind(this, socket));
 
     socket.on('¿Vio usted a mi abuela?', granmaDetectionHandler.bind(this, socket));
 
