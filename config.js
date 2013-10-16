@@ -1,4 +1,5 @@
-var config = {};
+var config = {},
+    remoteHost = "localhost";
 
 config.redis = {
     host: "localhost",
@@ -8,23 +9,24 @@ config.redis = {
 config.woodChopper = {
     period: 500,
     type: "Madera",
-    url: "http://localhost:3003"
+    url: "http://" + remoteHost + ":3003"
 }
 
 config.steelProducer = {
-    url: "http://localhost",
+    url: "http://" + remoteHost + "",
     portHttp: "3005",
     portSocketIO: "3004",
-    type: "Metal"
+    type: "Metal",
+    period: 1000
 }
 
 config.cementServer = {
-    host: "localhost",
+    host: "" + remoteHost + "",
     type: "Cemento"
 }
 
 config.centralServer = {
-    url: "http://localhost:3001"
+    url: "http://" + remoteHost + ":3001"
 }
 
 config.merchant = {

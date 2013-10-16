@@ -60,7 +60,7 @@ function endCommunication (socket, data) {
         console.log("Steel depleted");
     }
 
-    socket.emit('¡Hola Don Jose!');
+    setTimeout(socket.emit.bind(socket, '¡Hola Don Jose!'), config.steelProducer.period);
 }
 
 function communicationError (socket, data) {
