@@ -12,6 +12,12 @@ config.woodChopper = {
     url: "http://" + remoteHost + ":3003"
 }
 
+config.diogenes = {
+    period: 5000,
+    type: "Trastos",
+    url: "http://localhost:3008"
+}
+
 config.steelProducer = {
     url: "http://" + remoteHost + "",
     portHttp: "3005",
@@ -30,7 +36,8 @@ config.centralServer = {
 }
 
 config.merchant = {
-    port: "4001"
+    port: "4001",
+    period: 5000
 }
 
 config.mongo = {

@@ -9,8 +9,16 @@ var connection = amqp.createConnection({ host: config.cementServer.host });
 
 redisConn = redisUtils.getRedisConnection();
 
+var options = {
+
+};
+
 connection.on('ready', function () {
-    connection.queue('cemento', function(q){
+    console.log("Cement collector ready");
+
+    connection.queue('cemento', options, function(q){
+        console.log("Reading cement queue");
+
         q.bind('#');
 
         q.subscribe(function (message) {
